@@ -1,0 +1,29 @@
+# ---- File e cartelle R temporanei ----
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ---- Output e risultati (non committare grossi file generati) ----
+output/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.rds
+*.RData
+
+# ---- Cartella dati sensibili ----
+data/
+
+# ---- File di log ----
+*.log
+
+# ---- File di sistema ----
+.DS_Store
+Thumbs.db
+
+# ---- Backup files ----
+*~
+*.bak
