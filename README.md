@@ -68,8 +68,3 @@ If you use this code, please cite the associated publication:
 > *A Low-Inflammatory Diet Rewires Metaflammation and Trained Immunity to Reprogram Immune Tone in Early Colorectal Tumorigenesis*. 2025.
 
 ---
-
-## 👥 Authors
-- **Elena Daveri** – Conceptualization, Writing  
-- **Luca Lalli** – Statistical analysis, Code development  
-- … (see manuscript for full author list)
