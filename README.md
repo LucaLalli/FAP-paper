@@ -12,16 +12,14 @@ The workflow implements standardized data processing, normalization, longitudina
 
 ---
 
----
-
 ## 🔐 Data availability & privacy
 The data used in this study include **sensitive clinical datasets** and are **not** shared in this repository.  
 To run the analysis you must provide a compatible `data` and point the script to it (see below).
 
 If you wish to reproduce the analysis, please contact the corresponding author for data access:
-📧 Elena.Daveri@istitutotumori.mi.it
-📧 Licia.Rivoltini@istitutotumori.mi.it
-📧 Luca.Lalli@istitutotumori.mi.it
+- 📧 Elena.Daveri@istitutotumori.mi.it
+- 📧 Licia.Rivoltini@istitutotumori.mi.it
+- 📧 Luca.Lalli@istitutotumori.mi.it
 
 ---
 
@@ -48,24 +46,6 @@ This object is a **list** with the following elements:
 - `name_cytokines`, `name_myeloids`, `name_lymphoids`, `name_emocromos` — character vectors of variable names by family
 - `name_timepoints_num` — numeric vector of timepoints (`c(0,3,6)`)
 - `name_ptzs` — character vector of patient IDs
-
----
-
-## 🔧 Local configuration (no hard-coded paths)
-Place the supplied RDS file under `data/` or set an environment variable:
-
-```r
-Sys.setenv(FAP_DATA_RDS = "data/fap_input.rds")
-obj <- readRDS(Sys.getenv("FAP_DATA_RDS"))
-list2env(obj, envir = environment())  # loads data and name_* vectors
-```
-
-**Sanity checks (optional):**
-```r
-stopifnot(all(c("data","name_cytokines","name_myeloids",
-                "name_lymphoids","name_emocromos",
-                "name_timepoints_num","name_ptzs") %in% names(obj)))
-```
 
 ---
 
